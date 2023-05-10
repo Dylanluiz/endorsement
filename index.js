@@ -104,7 +104,7 @@ function createElement(item) {
     binContainer.append(bin)
     createEl.append(binContainer)
     
-    bin.addEventListener('dblclick', function() {
+    bin.addEventListener('click', function() {
         let exactPositionOfPostInDB = ref(database, `endorsementsList/${itemId}`)
          remove(exactPositionOfPostInDB)
     
